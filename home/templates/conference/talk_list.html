@@ -1,0 +1,11 @@
+{% extends 'conference/layout.html' %}
+{% block title %}Taslks{% endblock %}
+{% load bootstrap5 %}
+{% block content %}
+    <h1>My Talks</h1>
+    <ul>
+        {% for talk in talks %}
+            <li>{{ talk.title }} - {{ talk.start_time }} to {{ talk.end_time }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}

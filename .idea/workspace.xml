@@ -4,15 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0af60e68-488f-43fe-bda9-3fcb09ec2471" name="Changes" comment="Added requirements.txt">
-      <change afterPath="$PROJECT_DIR$/registration/templates/registration/layout.html" afterDir="false" />
+    <list default="true" id="0af60e68-488f-43fe-bda9-3fcb09ec2471" name="Changes" comment="registration and authorization ready">
+      <change afterPath="$PROJECT_DIR$/home/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home/templates/conference/access_denied.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home/templates/conference/add_room.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home/templates/conference/layout.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home/templates/conference/talk_list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home/templates/conference/user_list.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Conference/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Conference/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/home/templates/conference/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/conference/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/registration/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/registration/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/registration/templates/registration/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/registration/templates/registration/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/registration/templates/registration/registration.html" beforeDir="false" afterPath="$PROJECT_DIR$/registration/templates/registration/registration.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,8 +29,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -104,7 +108,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1714551024086</updated>
-      <workItem from="1714551034906" duration="7282000" />
+      <workItem from="1714551034906" duration="11319000" />
     </task>
     <task id="LOCAL-00001" summary="Backend for registration and authentication ready">
       <option name="closed" value="true" />
@@ -122,7 +126,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714565720448</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="registration and authorization ready">
+      <option name="closed" value="true" />
+      <created>1714575977383</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1714575977383</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -132,6 +144,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Backend for registration and authentication ready" />
     <MESSAGE value="Added requirements.txt" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added requirements.txt" />
+    <MESSAGE value="registration and authorization ready" />
+    <option name="LAST_COMMIT_MESSAGE" value="registration and authorization ready" />
   </component>
 </project>

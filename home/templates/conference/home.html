@@ -1,2 +1,16 @@
-<a href="{% url 'logout' %}">Log</a><br>
-{{ user }}
+{% extends 'conference/layout.html' %}
+{% block title %}Conference schedule{% endblock %}
+{% load bootstrap5 %}
+{% block content %}
+    <div class="container-fluid">
+        <h1>Conference Schedule</h1>
+        {% for room, talks in schedule.items %}
+            <h2>{{ room.name }}</h2>
+            <ul>
+                {% for talk in talks %}
+                <li>{{ talk.title }} - {{ talk.start_time }} to {{ talk.end_time }}</li>
+                {% endfor %}
+            </ul>
+        {% endfor %}
+    </div>
+{% endblock %}
