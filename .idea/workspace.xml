@@ -5,18 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0af60e68-488f-43fe-bda9-3fcb09ec2471" name="Changes" comment="registration and authorization ready">
-      <change afterPath="$PROJECT_DIR$/home/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/home/templates/conference/access_denied.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/home/templates/conference/add_room.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/home/templates/conference/layout.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/home/templates/conference/talk_list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/home/templates/conference/user_list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home/migrations/0003_talk_youtube_video_id.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home/templates/conference/talk_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Conference.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Conference.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Conference/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Conference/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templates/conference/access_denied.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/conference/access_denied.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templates/conference/add_room.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/conference/add_room.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/home/templates/conference/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/conference/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templates/conference/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/conference/layout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templates/conference/talk_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/conference/talk_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templates/conference/user_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/conference/user_list.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/home/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/home/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/registration/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/registration/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,12 +41,24 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="5" />
   </component>
   <component name="GithubDefaultAccount">
     <option name="defaultAccountId" value="53ab6a91-7895-431b-a4e1-c0e775eede90" />
   </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2fuAociXNGF5EKdK94p3MOLc8Gw" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
@@ -47,25 +66,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "DefaultHtmlFileTemplate": "HTML File",
-    "Django Server.Conference.executor": "Run",
-    "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "develop",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "com.poratu.idea.plugins.tomcat.setting.TomcatServersConfigurable",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Django Server.COnference.executor&quot;: &quot;Run&quot;,
+    &quot;Django Server.Conference.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenDjangoStructureViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;develop&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/Dreamy_Undertaker&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.django.DjangoModulesConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Conference" type="Python.DjangoServer" factoryName="Django server">
       <module name="Conference" />
@@ -77,6 +98,7 @@
         <env name="DJANGO_SETTINGS_MODULE" value="Conference.settings" />
       </envs>
       <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="Python 3.11 (Conference)" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -96,7 +118,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-5a2391486177-2887949eec09-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-233.13763.11" />
+        <option value="bundled-python-sdk-09665e90c3a7-b11f5e8da5ad-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-233.15026.15" />
       </set>
     </attachedChunks>
   </component>
@@ -109,6 +131,12 @@
       <option name="presentableId" value="Default" />
       <updated>1714551024086</updated>
       <workItem from="1714551034906" duration="11319000" />
+      <workItem from="1714642115399" duration="7614000" />
+      <workItem from="1714712318475" duration="1980000" />
+      <workItem from="1714812355661" duration="128000" />
+      <workItem from="1714823503810" duration="1211000" />
+      <workItem from="1715080318904" duration="113000" />
+      <workItem from="1715528206433" duration="24000" />
     </task>
     <task id="LOCAL-00001" summary="Backend for registration and authentication ready">
       <option name="closed" value="true" />

@@ -1,0 +1,25 @@
+{% extends 'conference/layout.html' %}
+{% block content %}
+        <div class="container-fluid">
+            <div class="row justify-content-md-center row align-items-center">
+                <div class="col-2">
+                    <h1>{{ talk.title }}</h1>
+                    <p>Спикер(ы): {{ talk.speakers.all|join:", " }}</p>
+                    <p>Аудитория: {{ talk.room.name }}</p>
+                    <p>Начало: {{ talk.start_time }}</p>
+                    <p>Окончание: {{ talk.end_time }}</p>
+                </div>
+                <div class="col-3">
+                    {% if talk.youtube_video_id %}
+                    <div>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/{{ talk.youtube_video_id }}" frameborder="0" allowfullscreen>
+                        </iframe>
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+            <div class="row justify-content-md-center row align-items-center">
+
+            </div>
+        </div>
+{% endblock %}

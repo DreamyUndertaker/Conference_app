@@ -1,10 +1,24 @@
 {% extends "conference/layout.html" %}
+{% load bootstrap5 %}
 {% block title %}AddRoom{% endblock %}
 {% block content %}
-    <h1>Add Room</h1>
-    <form method="POST">
-        {% csrf_token %}
-        {{ form.as_p }}
-        <button type="submit">Save</button>
-    </form>
+    <div class="container-fluid">
+        <div class="row justify-content-md-center row align-items-center">
+            <div class="col-3">
+                <h1>Добавить аудиторию</h1>
+                <form method="POST">
+                    {% csrf_token %}
+                    {% bootstrap_label 'Название аудитории' %}
+                    {% bootstrap_field form.name show_label=False placeholder='Название аудитории' %}
+                    <div class="row">
+                        <div class="d-grid gap-1 col-9 mx-auto" style="padding-bottom: 30px; padding-top: 5px">
+                            <button type="submit" class="btn" style="color: white; background-color: grey">
+                                Сохранить
+                            </button>
+                        </div>
+                   </div>
+                </form>
+            </div>
+        </div>
+    </div>
 {% endblock %}

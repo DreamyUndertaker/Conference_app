@@ -9,4 +9,5 @@ urlpatterns = [
     path('talks/', views.talk_list, name='talk_list'),
     path('users/', views.user_list, name='user_list'),
     path('addRoom/', views.add_room, name='add_room'),
+    path('talk/<int:talk_id>/', views.talk_detail, name='talk_detail'),
 ]

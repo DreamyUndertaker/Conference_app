@@ -13,6 +13,7 @@ class Talk(models.Model):
     room = models.ForeignKey(Room, on_delete=models.CASCADE)
     start_time = models.DateTimeField(_('Start Time'))
     end_time = models.DateTimeField(_('End Time'))
+    youtube_video_id = models.CharField(max_length=20, blank=True, null=True)
 
 
 class Schedule(models.Model):

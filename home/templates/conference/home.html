@@ -3,14 +3,37 @@
 {% load bootstrap5 %}
 {% block content %}
     <div class="container-fluid">
-        <h1>Conference Schedule</h1>
+        <h1 class="text-center">Распиание конференций</h1>
         {% for room, talks in schedule.items %}
-            <h2>{{ room.name }}</h2>
-            <ul>
-                {% for talk in talks %}
-                <li>{{ talk.title }} - {{ talk.start_time }} to {{ talk.end_time }}</li>
-                {% endfor %}
-            </ul>
+            <div class="container-fluid">
+                <div class="row justify-content-md-center row align-items-center">
+                    <div class="col-4">
+                    <h5>Аудитория: {{ room.name }}</h5>
+                        <div class="">
+                            <table class="table table-striped table-hover">
+                                <thead>
+                                    <th scope="col">Название доклада</th>
+                                    <th scope="col">Начало</th>
+                                    <th scope="col">Конец</th>
+                                </thead>
+                                <tbody>
+                                    {% for talk in talks %}
+                                        <tr>
+                                            <td>
+                                                <a href="{% url 'home:talk_detail' talk.id %}" class="text-decoration-none">
+                                                    {{ talk.title }}
+                                                </a>
+                                            </td>
+                                            <td>{{ talk.start_time }}</td>
+                                            <td>{{ talk.end_time }}</td>
+                                        </tr>
+                                    {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
         {% endfor %}
     </div>
 {% endblock %}

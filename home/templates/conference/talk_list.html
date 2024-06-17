@@ -1,11 +1,34 @@
 {% extends 'conference/layout.html' %}
-{% block title %}Taslks{% endblock %}
+{% block title %}Доклады{% endblock %}
 {% load bootstrap5 %}
 {% block content %}
-    <h1>My Talks</h1>
-    <ul>
-        {% for talk in talks %}
-            <li>{{ talk.title }} - {{ talk.start_time }} to {{ talk.end_time }}</li>
-        {% endfor %}
-    </ul>
+    <h1 class="text-center">Доклады</h1>
+    <div class="row justify-content-md-center row align-items-center">
+        <div class="col-6">
+            <table class="table table-striped table-hover">
+                <thead>
+                    <th scope="col">Название доклада</th>
+                    <th scope="col">Начало</th>
+                    <th scope="col">Конец</th>
+                    <th scope="col">Аудитория</th>
+                    <th scope="col">Докладчик</th>
+                </thead>
+                <tbody>
+                {% for talk in talks %}
+                    <tr>
+                        <td>
+                            <a href="{% url 'home:talk_detail' talk.id %}" class="text-decoration-none">
+                                {{ talk.title }}
+                            </a>
+                        </td>
+                        <td>{{ talk.start_time }}</td>
+                        <td>{{ talk.end_time }}</td>
+                        <td>{{ talk.room.name }}</td>
+                        <td>{{ talk.speakers.all|join:". " }}</td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
 {% endblock %}
